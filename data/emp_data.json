@@ -1,0 +1,29 @@
+{
+  "add_emp": {
+    "username": "小偷家族1111",
+    "mobile": "17522345699",
+    "http_code": 200,
+    "code": 10000,
+    "success": true,
+    "message": "操作成功"
+  },
+  "query_emp": {
+    "http_code": 200,
+    "code": 10000,
+    "success": true,
+    "message": "操作成功"
+  },
+  "modify_emp": {
+    "username": "猫鼠游戏001",
+    "http_code": 200,
+    "code": 10000,
+    "success": true,
+    "message": "操作成功"
+  },
+  "delete_emp": {
+    "http_code": 200,
+    "code": 10000,
+    "success": true,
+    "message": "操作成功"
+  }
+}

@@ -1,0 +1,3 @@
+2020-05-19 15:21:13,738 INFO [root] [__init__.py(<module>:7)] - 测试日志是否会打印
+2020-05-19 15:21:14,146 INFO [root] [test_ihrm_employee_parameterized.py(test_01_login:21)] - 登录的结果为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': '65defd44-2922-43d7-bbf8-88dee41c8bcb'}
+2020-05-19 15:21:14,254 INFO [root] [test_ihrm_employee_parameterized.py(test_02_add_emp:35)] - 添加员工的结果是：{'success': False, 'code': 99999, 'message': '抱歉，系统繁忙，请稍后重试！', 'data': None}
