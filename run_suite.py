@@ -17,3 +17,6 @@ with open(report_name,"wb") as f:
     runner.run(suite)
 
 print("测试增加一行代码，jenkins会不会自动构建")
+
+print("再次测试")
+
