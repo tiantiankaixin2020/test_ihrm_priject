@@ -200,9 +200,9 @@
         
     <div class='page-header'>
         <h1>IHRM接口测试报告</h1>
-    <p class='attribute'><strong>开始时间:</strong> 2020-05-19 15:38:42</p>
-<p class='attribute'><strong>运行时长:</strong> 0:00:01.569387</p>
-<p class='attribute'><strong>状态:</strong> 通过 17</p>
+    <p class='attribute'><strong>开始时间:</strong> 2020-05-21 11:41:07</p>
+<p class='attribute'><strong>运行时长:</strong> 0:00:02.724858</p>
+<p class='attribute'><strong>状态:</strong> 通过 16 失败 1</p>
 
     </div>
     <div style="float: left;width:50%;"><p class='description'>人力资源模块</p></div>
@@ -233,11 +233,11 @@
             <td>查看</td>
         </tr>
         
-    <tr class='passClass'>
+    <tr class='failClass'>
         <td>script.test_ihrm_login_parameterized.TestIHRMLogin</td>
         <td>12</td>
-        <td>12</td>
-        <td>0</td>
+        <td>11</td>
+        <td>1</td>
         <td>0</td>
         <td><a href="javascript:showClassDetail('c1',12)">详情</a></td>
     </tr>
@@ -257,9 +257,28 @@
     <td colspan='5' align='center'>通过</td>
 </tr>
 
-<tr id='pt1.4' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_login_03__</div></td>
-    <td colspan='5' align='center'>通过</td>
+<tr id='ft1.4' class='none'>
+    <td class='failCase'><div class='testcase'>test_login_03__</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.4')" >
+        失败</a>
+
+    <div id='div_ft1.4' class="popup_window">
+        <pre>ft1.4: Traceback (most recent call last):
+  File "D:\Python\Python3.7.3\lib\site-packages\parameterized\parameterized.py", line 530, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "C:\Users\14145\Desktop\test_ihrm_project\script\test_ihrm_login_parameterized.py", line 24, in test_login
+    assert_comment(http_code, code, success, message, response, self)
+  File "C:\Users\14145\Desktop\test_ihrm_project\utiles.py", line 8, in assert_comment
+    self.assertEqual(code, response.json().get("code"))
+AssertionError: 20001 != 10000
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
 </tr>
 
 <tr id='pt1.5' class='hiddenRow'>
@@ -339,8 +358,8 @@
         <tr id='total_row'>
             <td>总计</td>
             <td>17</td>
-            <td>17</td>
-            <td>0</td>
+            <td>16</td>
+            <td>1</td>
             <td>0</td>
             <td>&nbsp;</td>
         </tr>
@@ -375,8 +394,8 @@
                     radius : '60%',
                     center: ['50%', '60%'],
                     data:[
-                        {value:17, name:'通过'},
-                        {value:0, name:'失败'},
+                        {value:16, name:'通过'},
+                        {value:1, name:'失败'},
                         {value:0, name:'错误'}
                     ],
                     itemStyle: {
