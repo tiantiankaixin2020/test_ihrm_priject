@@ -12,6 +12,7 @@ class TestIHRMEmployee(unittest.TestCase):
         self.login_api = LoginApi()
 
     def tearDown(self):
+        # 备注修改项
         pass
 
     def test01_emp_mange(self):
