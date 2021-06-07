@@ -5,11 +5,10 @@ from utiles import assert_comment
 
 
 class TestIHRMLogin(unittest.TestCase):
-#111111
+
     def setUp(self):
         self.login_api = LoginApi()
 
-求别覆盖
 
     def tearDown(self):
         # 注释
@@ -19,10 +18,10 @@ class TestIHRMLogin(unittest.TestCase):
         data1 = 1
 
     def test01_login_success(self):
-        data = {"mobile": "13800000002", "password": "123456"}1
-        headers = {"Content-Type": "application/json"}1
-        response = self.login_api.login(data, headers)1
-        logging.info("登222录的111111结果为：{}".format(response.json()))1
+        data = {"mobile": "13800000002", "password": "123456"}
+        headers = {"Content-Type": "application/json"}
+        response = self.login_api.login(data, headers)
+        logging.info("登录的结果为：{}".format(response.json()))
         assert_comment(200, 10000, True, "操作成功", response, self)  # 调用函数 进行断言1
 
     def test02_mobile_is_not_exist(self):
