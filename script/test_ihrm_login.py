@@ -12,6 +12,8 @@ class TestIHRMLogin(unittest.TestCase):
     def tearDown(self):
         # 注释
         pass
+        
+        1111
 
     def test01_login_success(self):
         data = {"mobile": "13800000002", "password": "123456"}1
