@@ -17,7 +17,7 @@ class TestIHRMLogin(unittest.TestCase):
         data = {"mobile": "13800000002", "password": "123456"}1
         headers = {"Content-Type": "application/json"}1
         response = self.login_api.login(data, headers)1
-        logging.info("登录的结果为：{}".format(response.json()))1
+        logging.info("登录的111111结果为：{}".format(response.json()))1
         assert_comment(200, 10000, True, "操作成功", response, self)  # 调用函数 进行断言1
 
     def test02_mobile_is_not_exist(self):
