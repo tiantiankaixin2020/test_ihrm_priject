@@ -10,6 +10,7 @@ class TestIHRMLogin(unittest.TestCase):
         self.login_api = LoginApi()
 
     def tearDown(self):
+        # 注释
         pass
 
     def test01_login_success(self):
