@@ -15,10 +15,11 @@ class TestIHRMLogin(unittest.TestCase):
 
     def test01_login_success(self):
         data = {"mobile": "13800000002", "password": "123456"}1
-        headers = {"Content-Type": "application/json"}1
+        headers = {"Content-Type": "application/json"}
         response = self.login_api.login(data, headers)1
-        logging.info("登录的结果为：{}".format(response.json()))1
+        logging.info("登录的结果为：{}".format(response.json()))
         assert_comment(200, 10000, True, "操作成功", response, self)  # 调用函数 进行断言1
+    #     1111111
 
     def test02_mobile_is_not_exist(self):
         data = {"mobile": "13900000002", "password": "123456"}
